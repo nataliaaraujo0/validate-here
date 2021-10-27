@@ -17,7 +17,6 @@ html {
 
 :root {
   --green: #204051;
-  --green-200: #84a9ac;
   --gray: #f2f2f2;
 }
 
@@ -40,6 +39,7 @@ body {
   justify-content: center;
   background: var(--green);
   align-items: center;
+  border-radius: 25px 0 0 25px;
   width: 732px;
 }
 
@@ -49,7 +49,8 @@ body {
 }
 
 h2 {
-  color: #f2f2f2;
+  color: #d7f6e9;
+  margin-top: 2rem;
 }
 
 .item-2 {
@@ -58,7 +59,11 @@ h2 {
   align-items: center;
   background: var(--gray);
   width: 486px;
-  border-radius: 24px;
+  border-radius: 0 25px 25px 0;
+}
+
+h1 {
+  margin-bottom: 2rem;
 }
 
 input {
@@ -68,19 +73,26 @@ input {
   border: 1px solid #d0d0d0;
   background: none;
   margin: 8px 0;
+  padding: 5px;
 }
 
 button {
-  width: 358px;
+  width: 370px;
   height: 40px;
   border: 0;
   border-radius: 16px;
-  background: var(--green-200);
+  background: var(--green);
   color: #f2f2f2;
   margin: 8px 0;
+  font-size: 16px;
+  transition: all 0.7s;
 }
 
 .item-2 > .content {
   display: flex;
   flex-direction: column;
+}
+
+button:hover {
+  opacity: 0.75;
 }
