@@ -14,22 +14,23 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <div class="container">
       <div class="item-1">
         <div class="content">
           <img src="./img/logo.svg" alt="" />
-          <h2>Here you can validate data!</h2>
+          <h2 class="title">Here you can validate data!</h2>
         </div>
       </div>
       <div class="item-2">
         <div class="content">
           <h1>Welcome</h1>
-          <div id="form-fiel-name">
+          <div id="form-field-name">
             <input type="text" id="name" placeholder="Name" />
             <span></span>
           </div>
-          <div id="form-fiel-email">
+          <div id="form-field-email">
             <input type="email" id="email" placeholder="Email" />
             <span></span>
           </div>
@@ -40,29 +41,6 @@
       </div>
     </div>
 
-    <script>
-      //expressao relugar para chegar email válido
-      var isEmail = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
-
-      var fieldEmail = document.getElementById("email");
-      var fieldName = document.getElementById("name");
-
-      function validaForm() {
-        var nameStr = fieldName.value;
-        var emailStr = fieldEmail.value;
-
-        if (nameStr.length > 0 && nameStr.length >= 3) {
-          console.log("sucess");
-        } else {
-          console.log("error");
-        }
-
-        if (isEmail.test(emailStr)) {
-          console.log("email: sucess");
-        } else {
-          console.log("email: error");
-        }
-      }
-    </script>
+    <script src="./js/scripts.js"></script>
   </body>
 </html>

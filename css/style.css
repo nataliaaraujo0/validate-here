@@ -32,6 +32,32 @@ body {
   height: 743px;
   display: flex;
   flex-direction: row;
+
+  transition: all 1s;
+}
+
+.container:hover {
+  width: 1225px;
+  height: 750px;
+}
+
+.error {
+  display: flex;
+  color: #204051;
+  background: #ff7f7f;
+  border-radius: 0.65rem;
+  padding: 0.313rem;
+  transition: all 2s;
+}
+
+.success {
+  display: flex;
+  color: #204051;
+  background: #ade0d1;
+  border-radius: 0.65rem;
+  padding: 0.313rem;
+  margin: 1rem;
+  transition: all 1s;
 }
 
 .item-1 {
@@ -41,6 +67,11 @@ body {
   align-items: center;
   border-radius: 25px 0 0 25px;
   width: 45.75rem;
+  transition: all 1s;
+}
+
+.item-1:hover {
+  background: #204051dc;
 }
 
 .item-1 > .content {
